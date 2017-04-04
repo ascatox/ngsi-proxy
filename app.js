@@ -48,7 +48,7 @@ var express = require('express'),
 var app = express();
 
 app.configure(function() {
-    app.set('port', process.env.PORT || 3000);
+    app.set('port', process.env.PORT || 8080);
     app.enable('case sensitive routing');
     app.use(express.logger('default'));
     app.use(app.router);
